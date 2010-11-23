@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+		<TextView
+        	android:id="@+id/settings_label"
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:layout_marginRight="10dip"
+       		android:text="EQ Settings"/>
+	
+   		<ToggleButton android:id="@+id/enabler_button"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:textOn="ON"
+       		android:textOff="OFF"
+       		android:layout_below="@+id/settings_label" />
+		<Button
+       		android:id="@+id/load_button"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/enabler_button"
+   	    	android:layout_below="@+id/settings_label"
+       		android:layout_marginLeft="10dip"
+       		android:text="Load" />
+    	<Button
+   	    	android:id="@+id/save_button"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:text="Save"
+   	    	android:layout_toRightOf="@id/load_button"
+       		android:layout_below="@+id/settings_label" />
+    	<Button
+   	    	android:id="@+id/reset_button"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+   	    	android:text="Reset"
+       		android:layout_toRightOf="@id/save_button"
+       		android:layout_below="@+id/settings_label" />        	
+    	<Button
+   	    	android:id="@+id/back_button"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	android:text="Done"
+   	    	android:layout_toRightOf="@id/reset_button"
+       		android:layout_below="@+id/settings_label" />
+	
+	
+		<RadioGroup
+			android:id="@+id/radio_opts"
+   			android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:orientation="horizontal"
+     		android:layout_below="@+id/back_button">
+   			<RadioButton android:id="@+id/radio_3bands"
+	          	android:layout_width="wrap_content"
+	          	android:layout_height="wrap_content"
+       		  	android:text="3 Bands"
+	          	android:layout_marginRight="10dip" />
+   			<RadioButton android:id="@+id/radio_5bands"
+	        	android:layout_width="wrap_content"
+       		  	android:layout_height="wrap_content"
+	          	android:text="5 Bands"
+	          	android:layout_marginRight="10dip" />
+	        <RadioButton android:id="@+id/radio_10bands"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	          	android:text="10 Bands"
+       		  	android:layout_marginRight="10dip" />
+   		</RadioGroup>
+	    <TextView
+       		android:id="@+id/spinner_label"
+	       	android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+   	    	android:layout_marginRight="10dip"
+       		android:text="Presets"
+       		android:layout_below="@+id/radio_opts" />  
+	    <Spinner 
+        	android:id="@+id/spinner"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:prompt="@string/preset_prompt"
+        	android:layout_below="@+id/spinner_label"/>
+   		<TextView
+       		android:id="@+id/levels_label"
+	       	android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+   	    	android:layout_marginRight="10dip"
+       		android:text="EQ Levels"
+       		android:layout_below="@+id/spinner" />  
+     	<RelativeLayout
+            android:id="@+id/bands_display_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+			android:layout_below="@+id/levels_label"
+			android:layout_centerInParent="true"
+            android:padding="5dp" >	
+     	</RelativeLayout>
+
+</RelativeLayout>
+                  
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/amp_band_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="150dip"
+	android:layout_below="@+id/levels_label"
+    android:padding="1dp" >
+    <com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/preamp_seekbar"
+    	android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+    	android:layout_height="fill_parent"
+    	android:layout_width="26dip"
+    	android:layout_marginRight="8dip"/>	
+
+<RelativeLayout
+    android:id="@+id/five_bands_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="200dip"
+	android:layout_toRightOf="@+id/preamp_seekbar"
+     >
+    <com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/SeekBar_band01"
+	    android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+	    android:layout_height="200dip" 
+	    android:layout_width="26dip"
+    	android:layout_marginRight="3dip" />    		
+	<com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/SeekBar_band02"
+	    android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+	    android:layout_height="200dip" 
+	    android:layout_width="26dip"
+    	android:layout_marginRight="3dip"
+	    android:layout_toRightOf="@+id/SeekBar_band01"/>
+	<com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/SeekBar_band03"
+	    android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+	    android:layout_height="200dip" 
+	    android:layout_width="26dip"
+    	android:layout_marginRight="3dip"
+	    android:layout_toRightOf="@+id/SeekBar_band02"/>
+	<com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/SeekBar_band04"
+	    android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+	    android:layout_height="200dip" 
+	    android:layout_width="26dip"
+    	android:layout_marginRight="3dip"
+	    android:layout_toRightOf="@+id/SeekBar_band03"/>
+	<com.sasken.player.widget.VerticalSeekBar
+		android:id="@+id/SeekBar_band05"
+	    android:progressDrawable="@drawable/progress_vertical"
+    	android:thumb="@drawable/seek_thumb"
+	    android:layout_height="200dip" 
+	    android:layout_width="26dip"
+    	android:layout_toRightOf="@+id/SeekBar_band04"/>	
+</RelativeLayout>
+</RelativeLayout>
