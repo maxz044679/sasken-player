@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/parent">
+
+	<EditText
+		android:text="@string/EditTextSong" 
+		android:id="@+id/EditTextSong"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerInParent="true"/>
+<!-- 
+	<ProgressBar
+		android:id="@+id/ProgressBar01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_centerInParent="true"/>
+ -->
+	<Button
+		android:text="@string/ButtonPrevious"
+		android:id="@+id/ButtonPrevious"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_alignParentLeft="true"/>
+
+    <Button 
+    	android:text="@string/ButtonPlay" 
+	    android:id="@+id/ButtonPlay" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+		android:layout_toRightOf="@id/ButtonPrevious"/>
+
+    <Button 
+    	android:text="@string/ButtonStop" 
+	    android:id="@+id/ButtonStop" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_toRightOf="@id/ButtonPlay"/>
+
+	<Button
+		android:text="@string/ButtonNext"
+		android:id="@+id/ButtonNext"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_toRightOf="@id/ButtonStop"/>
+
+    <Button
+    	android:text="@string/ButtonEqualizer"
+	    android:id="@+id/ButtonEqSettings"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_toRightOf="@id/ButtonNext"/>
+      
+    <Button
+	    android:text="@string/ButtonVisualizer"
+	    android:id="@+id/ButtonVisualizer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/EditTextSong"
+	    android:layout_toRightOf="@id/ButtonEqSettings"/>
+      
+    <Button 
+    	android:text="@string/VUVisualizer" 
+	    android:id="@+id/ButtonVU" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/ButtonEqSettings"
+	    android:layout_alignParentLeft="true"/>
+      
+    <FrameLayout
+	    android:id="@+id/Frame_VU_Visualizer"
+	    android:layout_height="30dip"
+	    android:layout_width="fill_parent"
+	    android:layout_margin="10dip"
+	    android:layout_below="@id/ButtonEqSettings"
+	    android:layout_toRightOf="@id/ButtonVU">
+    	<com.sasken.player.visualizations.VU
+	      android:layout_height="fill_parent"
+	      android:layout_width="fill_parent"
+	      android:id="@+id/VU_Visualizer"/> 
+    </FrameLayout>
+    
+    <FrameLayout
+	    android:id="@+id/Frame_Visualizer"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:layout_margin = "10dip"
+	    android:layout_below="@id/Frame_VU_Visualizer"
+	    android:layout_centerHorizontal="true">
+	    <!-- com.sasken.player.visualizations.VI20Band
+	      android:layout_height="fill_parent"
+	      android:layout_width="fill_parent"
+	      android:id="@+id/Band10_Visualizer"/-->
+	</FrameLayout> 
+</RelativeLayout>

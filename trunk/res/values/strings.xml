@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SaskenPlayer</string>
+    <string name="ButtonPrevious">Prev</string>
+    <string name="ButtonPlay">Play/Pause</string>
+    <string name="ButtonStop">Stop</string>
+    <string name="ButtonEqualizer">Eq</string>
+    <string name="EditTextSong">/mnt/sdcard/PCM_44_S.wav</string>
+    <string name="VUVisualizer">VU</string>
+    <string name="ButtonNext">Next</string>
+    <string name="ButtonVisualizer">Vis</string>
+	<string name="ButtonEqSettings">Equalizer</string>
+    <string name="preset_prompt">Presets</string>
+    <string-array name="PresetsArray">
+        <item>Choose a Preset...</item>
+        <item>ROCK</item>
+        <item>JAZZ</item>
+        <item>FULL BASS</item>
+        <item>FULL TREBLE</item>
+        <item>VOCAL</item>
+    </string-array>
+    <string name="bandHeight">200dip</string>
+</resources>
